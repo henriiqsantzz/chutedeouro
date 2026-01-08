@@ -1748,7 +1748,7 @@ body.loading-active {
 .confirmation-fee-amount {
     font-size: 22px;
     font-weight: 600;
-    color: #ea445a;
+    color: #ff4c00;
     margin-bottom: 12px;
     letter-spacing: -0.01em;
 }
@@ -1822,7 +1822,7 @@ body.loading-active {
 
 .confirmation-requirement-icon {
     background: rgba(234, 68, 90, 0.1);
-    color: #ea445a;
+    color: #ff4c00;
     width: 28px;
     height: 28px;
     border-radius: 6px;
@@ -1860,7 +1860,7 @@ body.loading-active {
 }
 
 .confirmation-cta-button {
-    background: #ea445a;
+    background: #ff4c00;
     color: white;
     border: none;
     border-radius: 7px;
@@ -1943,7 +1943,7 @@ body.loading-active {
 
 .confirmation-security-icon {
     font-size: 14px;
-    color: #ea445a;
+    color: #ff4c00;
     margin-bottom: 6px;
 }
 
@@ -1966,7 +1966,7 @@ body.loading-active {
 }
 
 .confirmation-footer-link {
-    color: #ea445a;
+    color: #ff4c00;
     text-decoration: none;
     font-weight: 500;
     font-size: 11px;
@@ -2813,5 +2813,6 @@ input.nome-completo,
     width: 96px;
 
 }
+
 
 
