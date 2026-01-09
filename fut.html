@@ -3,23 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal United 26 - A Cobertura Completa do Mundial</title>
-    <meta name="description" content="Acompanhe as últimas notícias, tabelas e curiosidades sobre a Copa do Mundo de 2026 nos EUA, México e Canadá.">
-    
+
+    <title>United 26 | Panorama do Futebol Internacional</title>
+
+    <meta name="description" content="Conteúdo informativo e educativo sobre futebol internacional, formatos de torneios, organização de eventos e curiosidades do esporte.">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <style>
-        /* =========================================
-           CSS RESET & VARIÁVEIS
-           ========================================= */
         :root {
-            --primary-color: #0d1b2a; /* Azul Escuro Profundo */
+            --primary-color: #0d1b2a;
             --secondary-color: #1b263b;
-            --accent-color: #e63946; /* Vermelho Notícia */
+            --accent-color: #e63946;
             --text-color: #333;
             --light-bg: #f8f9fa;
             --white: #ffffff;
@@ -29,22 +27,18 @@
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        
+
         body {
             font-family: 'Roboto', sans-serif;
             background-color: var(--light-bg);
             color: var(--text-color);
             line-height: 1.6;
-            overflow-x: hidden;
         }
 
-        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        a { text-decoration: none; color: inherit; }
         ul { list-style: none; }
         img { width: 100%; display: block; object-fit: cover; }
 
-        /* =========================================
-           ESTRUTURA
-           ========================================= */
         .container {
             max-width: var(--container-width);
             margin: 0 auto;
@@ -66,9 +60,6 @@
             text-transform: uppercase;
         }
 
-        /* =========================================
-           NAVBAR (Estilo Portal)
-           ========================================= */
         .top-bar {
             background-color: var(--primary-color);
             color: white;
@@ -76,7 +67,10 @@
             font-size: 0.8rem;
         }
 
-        .top-bar .container { display: flex; justify-content: space-between; }
+        .top-bar .container {
+            display: flex;
+            justify-content: space-between;
+        }
 
         nav {
             background: var(--white);
@@ -99,25 +93,27 @@
             font-weight: 800;
             color: var(--primary-color);
         }
+
         .logo span { color: var(--accent-color); }
 
-        .menu { display: flex; gap: 25px; }
+        .menu {
+            display: flex;
+            gap: 25px;
+        }
+
         .menu a {
             font-weight: 500;
             text-transform: uppercase;
             font-size: 0.9rem;
             color: var(--secondary-color);
         }
-        .menu a:hover { color: var(--accent-color); }
-        
-        .menu-mobile-btn { display: none; font-size: 1.5rem; cursor: pointer; }
 
-        /* =========================================
-           HERO SLIDER
-           ========================================= */
+        .menu a:hover { color: var(--accent-color); }
+
         .hero {
             height: 500px;
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1522778119026-d647f0565c6a?q=80&w=2070&auto=format&fit=crop');
+            background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.75)),
+            url('https://images.unsplash.com/photo-1522778119026-d647f0565c6a?q=80&w=2070&auto=format&fit=crop');
             background-position: center;
             background-size: cover;
             display: flex;
@@ -125,16 +121,17 @@
             color: white;
         }
 
-        .hero-content { max-width: 600px; }
-        
+        .hero-content {
+            max-width: 600px;
+        }
+
         .badge {
             background: var(--accent-color);
-            color: white;
-            padding: 5px 10px;
-            font-size: 0.8rem;
-            text-transform: uppercase;
+            padding: 6px 12px;
+            font-size: 0.75rem;
             font-weight: bold;
             border-radius: 4px;
+            text-transform: uppercase;
         }
 
         .hero h1 {
@@ -144,20 +141,11 @@
             line-height: 1.2;
         }
 
-        .btn-main {
-            display: inline-block;
-            background: var(--white);
-            color: var(--primary-color);
-            padding: 12px 30px;
-            font-weight: bold;
-            border-radius: 4px;
-            margin-top: 20px;
+        .hero p {
+            font-size: 1rem;
+            opacity: 0.95;
         }
-        .btn-main:hover { background: var(--accent-color); color: white; }
 
-        /* =========================================
-           NOTÍCIAS GRID (Foco do Site)
-           ========================================= */
         .news-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -167,21 +155,12 @@
         .news-card {
             background: var(--white);
             border-radius: var(--border-radius);
-            overflow: hidden;
             box-shadow: var(--shadow);
-            transition: transform 0.3s;
-            display: flex;
-            flex-direction: column;
+            overflow: hidden;
         }
 
-        .news-card:hover { transform: translateY(-5px); }
+        .card-body { padding: 20px; }
 
-        .card-img { height: 200px; overflow: hidden; }
-        .card-img img { transition: 0.5s; height: 100%; width: 100%; object-fit: cover; }
-        .news-card:hover .card-img img { transform: scale(1.1); }
-
-        .card-body { padding: 20px; flex: 1; display: flex; flex-direction: column; }
-        
         .meta {
             font-size: 0.8rem;
             color: #888;
@@ -190,392 +169,125 @@
             justify-content: space-between;
         }
 
-        .card-body h3 {
-            font-size: 1.2rem;
-            margin-bottom: 15px;
-            color: var(--primary-color);
-            font-weight: 700;
-        }
-
-        .card-body p {
-            font-size: 0.9rem;
-            color: #666;
-            margin-bottom: 20px;
-            flex: 1;
-        }
-
-        .read-more {
-            color: var(--accent-color);
-            font-weight: 600;
-            font-size: 0.9rem;
-            text-transform: uppercase;
-        }
-
-        /* =========================================
-           TABELA / GRUPOS
-           ========================================= */
-        .table-wrapper {
-            overflow-x: auto;
-            background: white;
-            border-radius: var(--border-radius);
-            box-shadow: var(--shadow);
-        }
-
-        table { width: 100%; border-collapse: collapse; min-width: 600px; }
-        th { background: var(--secondary-color); color: white; padding: 15px; text-align: left; }
-        td { padding: 15px; border-bottom: 1px solid #eee; }
-        tr:last-child td { border: none; }
-        tr:hover { background-color: #f1f1f1; }
-        .team-flag { display: flex; align-items: center; gap: 10px; font-weight: 600; }
-        .team-flag img { width: 25px; height: 18px; border-radius: 2px; }
-
-        /* =========================================
-           FOOTER & LEGAL (Essencial para Ads)
-           ========================================= */
         footer {
             background: var(--primary-color);
             color: #bbb;
-            padding-top: 60px;
+            padding: 60px 0 20px;
             font-size: 0.9rem;
         }
 
-        .footer-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 40px;
-            margin-bottom: 40px;
-        }
-
-        .footer-col h4 { color: white; margin-bottom: 20px; }
-        .footer-links li { margin-bottom: 10px; }
-        .footer-links a:hover { color: var(--accent-color); }
-
         .legal-bar {
             background: #000;
-            padding: 20px 0;
+            padding: 15px 0;
             text-align: center;
-            border-top: 1px solid #333;
-        }
-
-        /* COOKIE BANNER */
-        #cookie-banner {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background: rgba(0,0,0,0.9);
-            color: white;
-            padding: 15px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
-            z-index: 9999;
-            transform: translateY(100%);
-            transition: transform 0.5s;
-        }
-        #cookie-banner.show { transform: translateY(0); }
-        .btn-accept {
-            background: var(--accent-color);
-            border: none;
-            color: white;
-            padding: 8px 20px;
-            cursor: pointer;
-            border-radius: 4px;
-        }
-
-        /* RESPONSIVO */
-        @media (max-width: 768px) {
-            .menu { display: none; }
-            .menu-mobile-btn { display: block; }
-            .hero h1 { font-size: 2rem; }
-            #cookie-banner { flex-direction: column; text-align: center; }
+            font-size: 0.75rem;
+            color: #555;
         }
     </style>
 </head>
+
 <body>
 
-    <div class="top-bar">
-        <div class="container">
-            <span><i class="fas fa-clock"></i> Atualizado: Hoje</span>
-            <span>Portal Oficial de Notícias Esportivas</span>
+<div class="top-bar">
+    <div class="container">
+        <span><i class="fas fa-clock"></i> Atualizado regularmente</span>
+        <span>Blog Informativo sobre Futebol Internacional</span>
+    </div>
+</div>
+
+<nav>
+    <div class="container nav-container">
+        <div class="logo">UNITED<span>26</span></div>
+        <ul class="menu">
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Artigos</a></li>
+            <li><a href="#">Guias</a></li>
+            <li><a href="#">Análises</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <span class="badge">Conteúdo Informativo</span>
+            <h1>Como funcionam os grandes eventos do futebol internacional</h1>
+            <p>
+                Um panorama educativo sobre formatos de competições,
+                organização, sedes e curiosidades dos principais torneios
+                globais de futebol.
+            </p>
         </div>
     </div>
+</section>
 
-    <nav>
-        <div class="container nav-container">
-            <a href="#" class="logo">UNITED<span>26</span> NEWS</a>
-            <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#noticias">Últimas Notícias</a></li>
-                <li><a href="#tabela">Tabela</a></li>
-                <li><a href="#estadios">Sedes</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-            <div class="menu-mobile-btn"><i class="fas fa-bars"></i></div>
+<section class="section-padding">
+    <div class="container">
+        <div class="section-header">
+            <h2>Artigos Recentes</h2>
         </div>
-    </nav>
 
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <span class="badge">Destaque Principal</span>
-                <h1>FIFA define as 16 cidades-sede para a Copa de 2026</h1>
-                <p>Confira a lista completa das cidades nos EUA, México e Canadá que receberão o maior evento esportivo do planeta.</p>
-                <a href="#noticias" class="btn-main">Ler Matéria Completa</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="noticias" class="section-padding">
-        <div class="container">
-            <div class="section-header">
-                <h2>Plantão United 26</h2>
-            </div>
-            
-            <div class="news-grid">
-                <article class="news-card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?q=80&w=2070&auto=format&fit=crop" alt="Bola de Futebol">
+        <div class="news-grid">
+            <div class="news-card">
+                <div class="card-body">
+                    <div class="meta">
+                        <span>Organização</span>
+                        <span>Leitura educativa</span>
                     </div>
-                    <div class="card-body">
-                        <div class="meta">
-                            <span><i class="far fa-calendar"></i> 05 Jan 2026</span>
-                            <span>Seleções</span>
-                        </div>
-                        <h3>Brasil confirma amistosos preparatórios na Flórida</h3>
-                        <p>A CBF anunciou hoje a agenda de jogos para a preparação final antes do mundial. A seleção enfrentará...</p>
-                        <a href="#" class="read-more">Ler mais &rarr;</a>
-                    </div>
-                </article>
-
-                <article class="news-card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1518091043644-c1d4457512c6?q=80&w=2000&auto=format&fit=crop" alt="Torcida">
-                    </div>
-                    <div class="card-body">
-                        <div class="meta">
-                            <span><i class="far fa-calendar"></i> 04 Jan 2026</span>
-                            <span>Ingressos</span>
-                        </div>
-                        <h3>Guia de Ingressos: Como comprar sem cair em golpes</h3>
-                        <p>A FIFA alerta para sites não oficiais. Veja o passo a passo seguro para garantir seu lugar nos estádios.</p>
-                        <a href="#" class="read-more">Ler mais &rarr;</a>
-                    </div>
-                </article>
-
-                <article class="news-card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?q=80&w=2000&auto=format&fit=crop" alt="Estádio México">
-                    </div>
-                    <div class="card-body">
-                        <div class="meta">
-                            <span><i class="far fa-calendar"></i> 03 Jan 2026</span>
-                            <span>Estádios</span>
-                        </div>
-                        <h3>O icônico Estádio Azteca passa por renovação final</h3>
-                        <p>O palco de duas finais de Copa do Mundo está pronto para receber o jogo de abertura em 2026.</p>
-                        <a href="#" class="read-more">Ler mais &rarr;</a>
-                    </div>
-                </article>
-
-                <article class="news-card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1560272564-c83b66b1ad12?q=80&w=2000&auto=format&fit=crop" alt="Futebol Campo">
-                    </div>
-                    <div class="card-body">
-                        <div class="meta">
-                            <span><i class="far fa-calendar"></i> 02 Jan 2026</span>
-                            <span>Regulamento</span>
-                        </div>
-                        <h3>Entenda o novo formato com 48 seleções</h3>
-                        <p>Mais grupos, fase de 16 avos e mais jogos. Explicamos tudo sobre a mudança histórica no regulamento.</p>
-                        <a href="#" class="read-more">Ler mais &rarr;</a>
-                    </div>
-                </article>
-
-                <article class="news-card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?q=80&w=2000&auto=format&fit=crop" alt="Jogador">
-                    </div>
-                    <div class="card-body">
-                        <div class="meta">
-                            <span><i class="far fa-calendar"></i> 01 Jan 2026</span>
-                            <span>Curiosidades</span>
-                        </div>
-                        <h3>As jovens promessas que devem brilhar no mundial</h3>
-                        <p>Olheiros do mundo todo estão de olho nestes 5 jogadores sub-21 que prometem ser revelação.</p>
-                        <a href="#" class="read-more">Ler mais &rarr;</a>
-                    </div>
-                </article>
-
-                <article class="news-card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=2000&auto=format&fit=crop" alt="Futebol">
-                    </div>
-                    <div class="card-body">
-                        <div class="meta">
-                            <span><i class="far fa-calendar"></i> 30 Dez 2025</span>
-                            <span>Tecnologia</span>
-                        </div>
-                        <h3>VAR automatizado: A tecnologia que mudará a arbitragem</h3>
-                        <p>Como o novo sistema de impedimento semiautomático funcionará nos gramados norte-americanos.</p>
-                        <a href="#" class="read-more">Ler mais &rarr;</a>
-                    </div>
-                </article>
-                
+                    <h3>Como são escolhidas as sedes de torneios internacionais</h3>
+                    <p>
+                        Entenda os critérios técnicos, logísticos e estruturais
+                        utilizados para definir cidades e estádios em grandes eventos.
+                    </p>
                 </div>
-        </div>
-    </section>
-
-    <section id="tabela" class="section-padding" style="background-color: white;">
-        <div class="container">
-            <div class="section-header">
-                <h2>Tabela de Classificação (Grupo A)</h2>
             </div>
-            <div class="table-wrapper">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Pos</th>
-                            <th>Seleção</th>
-                            <th>P</th>
-                            <th>J</th>
-                            <th>V</th>
-                            <th>E</th>
-                            <th>D</th>
-                            <th>SG</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td class="team-flag"><img src="https://flagcdn.com/w40/br.png" alt="Brasil"> Brasil</td>
-                            <td>9</td>
-                            <td>3</td>
-                            <td>3</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>+7</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td class="team-flag"><img src="https://flagcdn.com/w40/mx.png" alt="México"> México</td>
-                            <td>6</td>
-                            <td>3</td>
-                            <td>2</td>
-                            <td>0</td>
-                            <td>1</td>
-                            <td>+2</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td class="team-flag"><img src="https://flagcdn.com/w40/sn.png" alt="Senegal"> Senegal</td>
-                            <td>1</td>
-                            <td>3</td>
-                            <td>0</td>
-                            <td>1</td>
-                            <td>2</td>
-                            <td>-4</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td class="team-flag"><img src="https://flagcdn.com/w40/jp.png" alt="Japão"> Japão</td>
-                            <td>1</td>
-                            <td>3</td>
-                            <td>0</td>
-                            <td>1</td>
-                            <td>2</td>
-                            <td>-5</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <p style="margin-top: 15px; font-size: 0.8rem; color: #666;">*Tabela simulada para fins informativos baseada no ranking atual.</p>
-        </div>
-    </section>
 
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h4>Sobre o Portal</h4>
-                    <p>O United 26 News é o seu portal independente de notícias esportivas, focado em trazer a melhor cobertura do futebol mundial. Não possuímos afiliação direta com a FIFA.</p>
+            <div class="news-card">
+                <div class="card-body">
+                    <div class="meta">
+                        <span>Formato</span>
+                        <span>Análise geral</span>
+                    </div>
+                    <h3>Diferenças entre os formatos de competições globais</h3>
+                    <p>
+                        Uma explicação clara sobre grupos, fases eliminatórias
+                        e modelos adotados em diferentes torneios.
+                    </p>
                 </div>
-                <div class="footer-col">
-                    <h4>Links Úteis</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Tabela Completa</a></li>
-                        <li><a href="#">Ranking FIFA</a></li>
-                        <li><a href="#">Guia das Cidades</a></li>
-                        <li><a href="#">Fale Conosco</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Políticas</h4>
-                    <ul class="footer-links">
-                        <li><a href="#" onclick="alert('Página de Política de Privacidade')">Política de Privacidade</a></li>
-                        <li><a href="#" onclick="alert('Página de Termos de Uso')">Termos de Uso</a></li>
-                        <li><a href="#">Política de Cookies</a></li>
-                    </ul>
+            </div>
+
+            <div class="news-card">
+                <div class="card-body">
+                    <div class="meta">
+                        <span>Curiosidades</span>
+                        <span>História</span>
+                    </div>
+                    <h3>Como o futebol se tornou um evento global</h3>
+                    <p>
+                        Uma visão histórica sobre a expansão do futebol
+                        e sua popularização em diferentes continentes.
+                    </p>
                 </div>
             </div>
         </div>
-        <div class="legal-bar">
-            <div class="container">
-                <p>&copy; 2026 United News Portal. Todos os direitos reservados.</p>
-                <p style="font-size: 0.7rem; color: #555; margin-top: 5px;">Este site é de caráter informativo e jornalístico.</p>
-            </div>
-        </div>
-    </footer>
-
-    <div id="cookie-banner">
-        <p>Utilizamos cookies para melhorar sua experiência. Ao continuar, você concorda com nossa Política de Privacidade.</p>
-        <button class="btn-accept" onclick="acceptCookies()">Aceitar</button>
     </div>
+</section>
 
-    <script>
-        // Menu Mobile
-        const menuBtn = document.querySelector('.menu-mobile-btn');
-        const menu = document.querySelector('.menu');
+<footer>
+    <div class="container">
+        <p>
+            O United 26 é um blog informativo independente, com finalidade
+            exclusivamente educativa e editorial. Não possui vínculo,
+            afiliação ou representação oficial de federações, organizadores
+            ou entidades esportivas.
+        </p>
+    </div>
+</footer>
 
-        menuBtn.addEventListener('click', () => {
-            if (menu.style.display === 'block') {
-                menu.style.display = 'none';
-            } else {
-                menu.style.display = 'block';
-                menu.style.flexDirection = 'column';
-                menu.style.position = 'absolute';
-                menu.style.top = '80px';
-                menu.style.left = '0';
-                menu.style.width = '100%';
-                menu.style.background = 'white';
-                menu.style.padding = '20px';
-                menu.style.boxShadow = '0 5px 10px rgba(0,0,0,0.1)';
-            }
-        });
+<div class="legal-bar">
+    © 2026 United 26 · Conteúdo informativo e educativo
+</div>
 
-        // Lógica de Cookies
-        function acceptCookies() {
-            document.getElementById('cookie-banner').classList.remove('show');
-            localStorage.setItem('cookiesAccepted', 'true');
-        }
-
-        // Mostrar banner se não aceitou
-        window.addEventListener('load', () => {
-            if (!localStorage.getItem('cookiesAccepted')) {
-                setTimeout(() => {
-                    document.getElementById('cookie-banner').classList.add('show');
-                }, 2000);
-            }
-        });
-
-        // Script para garantir que links vazios não recarreguem a página (bom para usabilidade)
-        document.querySelectorAll('a[href="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-            });
-        });
-    </script>
 </body>
 </html>
