@@ -176,7 +176,7 @@ button:focus {
     align-items: center;
     gap: 10px;
     border-radius: 99px;
-    background: #ff4c00;
+    background: #f84d63;
     border: 0;
     position: relative;
 }
@@ -273,7 +273,7 @@ button:focus {
 }
 
 .parabens-valor {
-    color: #ff4c00;
+    color: #f84d63;
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
@@ -326,7 +326,7 @@ button:focus {
 
 .entre-pts {
     display: block;
-    color: #ff4c00;
+    color: #f84d63;
 }
 
 .btn-concluido-text {
@@ -522,7 +522,7 @@ button:focus {
   position: absolute;
   left: 0.35px;
   top: 3.64px;
-  background: #ff4c00; */
+  background: #f84d63; */
 }
 
 /* Texto inferior ("Dia 01") */
@@ -809,7 +809,7 @@ button:focus {
     justify-content: center;
     align-items: center;
     border-radius: 99px;
-    background: #ff4c00;
+    background: #f84d63;
     border: 0;
     display: flex;
     margin: 12px auto 0 auto;
@@ -1015,11 +1015,11 @@ button:focus {
 
 /* Estilo do botão ativo (selecionado) */
 .btn-valor.btn-active {
-    background-color: #ff4c0012;
+    background-color: #fff6f7;
     /* Fundo rosa bem claro */
-    border-color: #ff4c00;
+    border-color: #f84d63;
     /* Cor da borda rosa/vermelho */
-    color: #ff4c00;
+    color: #f84d63;
     /* Cor do texto rosa/vermelho */
 }
 
@@ -1067,7 +1067,7 @@ button:focus {
     width: 100%;
     height: 41px;
     border-radius: 8px;
-    background: #ff4c00;
+    background: #f84d63;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -1152,7 +1152,7 @@ button:focus {
 .btn-sacar-dois:not(.btn-sacar-indisponivel) {
     pointer-events: auto !important;
     cursor: pointer !important;
-    background: #ff4c00 !important;
+    background: #f84d63 !important;
     opacity: 1 !important;
 }
 
@@ -1601,7 +1601,7 @@ input.nome-completo,
     height: 100%;
     width: 0%;
     /* Começa com 0% */
-    background-color: #ff4c00;
+    background-color: #f84d63;
     transition: width 2s ease;
     /* Animação de transição suave para a largura da barra */
 }
@@ -1748,7 +1748,7 @@ body.loading-active {
 .confirmation-fee-amount {
     font-size: 22px;
     font-weight: 600;
-    color: #ff4c00;
+    color: #f84d63;
     margin-bottom: 12px;
     letter-spacing: -0.01em;
 }
@@ -1822,7 +1822,7 @@ body.loading-active {
 
 .confirmation-requirement-icon {
     background: rgba(255, 224, 212, 1);
-    color: #ff4c00;
+    color: #f84d63;
     width: 28px;
     height: 28px;
     border-radius: 6px;
@@ -1860,7 +1860,7 @@ body.loading-active {
 }
 
 .confirmation-cta-button {
-    background: #ff4c00;
+    background: #f84d63;
     color: white;
     border: none;
     border-radius: 7px;
@@ -1943,7 +1943,7 @@ body.loading-active {
 
 .confirmation-security-icon {
     font-size: 14px;
-    color: #ff4c00;
+    color: #f84d63;
     margin-bottom: 6px;
 }
 
@@ -1966,7 +1966,7 @@ body.loading-active {
 }
 
 .confirmation-footer-link {
-    color: #ff4c00;
+    color: #f84d63;
     text-decoration: none;
     font-weight: 500;
     font-size: 11px;
@@ -2552,7 +2552,7 @@ input.nome-completo,
 
 /* Estado de erro (borda vermelha) 
 .input-error {
-  border: 1px solid #ff4c00 !important; 
+  border: 1px solid #f84d63 !important; 
   transition: border-color 0.2s ease;
 }
 */
@@ -2707,7 +2707,7 @@ input.nome-completo,
 .new-progress-bar {
     height: 100%;
     width: 0%;
-    background-color: #ff4c00;
+    background-color: #f84d63;
     border-radius: 3px;
     transition: width 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     position: relative;
@@ -2813,6 +2813,7 @@ input.nome-completo,
     width: 96px;
 
 }
+
 
 
 
