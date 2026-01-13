@@ -1821,7 +1821,7 @@ body.loading-active {
 }
 
 .confirmation-requirement-icon {
-    background: rgba(255, 224, 212, 1);
+    background: rgba(255, 246, 247, 1);
     color: #f84d63;
     width: 28px;
     height: 28px;
@@ -2813,6 +2813,7 @@ input.nome-completo,
     width: 96px;
 
 }
+
 
 
 
